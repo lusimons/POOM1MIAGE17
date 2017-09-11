@@ -31,7 +31,7 @@ public abstract class Shape2D extends Shape implements Translatable2D
 	* @return Point2D
 	*/
 	public Point2D getRefPoint() {
-		return refPoint;
+		return this.refPoint;
 	}
 
 	/**
