@@ -2,6 +2,7 @@ package fr.parisnanterre.miage.poa.shapes;
 
 import java.lang.Math;
 
+
 public class Point2D
 {
     private double x;
