@@ -9,6 +9,13 @@ public class Point2D
     private double y;
 
     /**
+	* Default empty Shape2D constructor
+	*/
+	public Point2D() {
+		this(0.0,0.0);
+	}
+
+    /**
     * Default Point2D constructor
     */
     public Point2D(double x, double y) {
