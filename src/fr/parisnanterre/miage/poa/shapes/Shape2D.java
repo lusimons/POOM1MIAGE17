@@ -1,7 +1,7 @@
 package fr.parisnanterre.miage.poa.shapes;
 
 
-public abstract class Shape2D
+public abstract class Shape2D extends Shape implements Translatable2D
 {
     public Point2D refPoint;
 
