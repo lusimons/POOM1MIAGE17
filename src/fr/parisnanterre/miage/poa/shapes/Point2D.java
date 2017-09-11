@@ -1,7 +1,8 @@
 package fr.parisnanterre.miage.poa.shapes;
 
+import java.lang.Math;
 
-public class Point2D extends Parent implements Interface
+public class Point2D
 {
     private double x;
     private double y;
@@ -46,7 +47,7 @@ public class Point2D extends Parent implements Interface
      */
     public double distance(Point2D point)
     {
-        dist = sqrt( pow(this.x - point.x, 2) + pow(this.y - point.y, 2) );
+        double dist = Math.sqrt( Math.pow(this.x - point.x, 2) + Math.pow(this.y - point.y, 2) );
         return dist;
     }
 
