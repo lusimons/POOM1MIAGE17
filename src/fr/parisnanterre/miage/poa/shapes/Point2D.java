@@ -37,11 +37,11 @@ public class Point2D
 
     /**
      * [Check if the point is at the origin of the plane]
-     * @return [boolean: true if at the Origin, false otherwise]
+     * @return [boolean: true if at the origin, false otherwise]
      */
     public boolean isOrigin()
     {
-        if (this.x==0 && this.y==0)
+        if(this.x==0.0 && this.y==0.0)
         {
             return true;
         }
@@ -50,12 +50,12 @@ public class Point2D
 
     /**
      * [Calculate the distance between two Point2D]
-     * @param  Point2D point         [Point2D object]
+     * @param  Point2D [Point2D object]
      * @return         [double]
      */
     public double distance(Point2D point)
     {
-        double dist = Math.sqrt( Math.pow(this.x - point.x, 2) + Math.pow(this.y - point.y, 2) );
+        double dist = Math.sqrt( Math.pow(this.x - point.getX(), 2) + Math.pow(this.y - point.getY(), 2) );
         return dist;
     }
 
