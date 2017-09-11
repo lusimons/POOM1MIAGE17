@@ -49,4 +49,36 @@ public class Point2D extends Parent implements Interface
         dist = sqrt( pow(this.x - point.x) + pow(this.y - point.y) );
         return dist;
     }
+
+	/**
+	* Returns value of x
+	* @return
+	*/
+	public double getX() {
+		return x;
+	}
+
+	/**
+	* Sets new value of x
+	* @param double
+	*/
+	public void setX(double x) {
+		this.x = x;
+	}
+
+	/**
+	* Returns value of y
+	* @return
+	*/
+	public double getY() {
+		return y;
+	}
+
+	/**
+	* Sets new value of y
+	* @param double
+	*/
+	public void setY(double y) {
+		this.y = y;
+	}
 }
