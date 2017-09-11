@@ -46,7 +46,7 @@ public class Point2D extends Parent implements Interface
      */
     public double distance(Point2D point)
     {
-        dist = sqrt( pow(this.x - point.x) + pow(this.y - point.y) );
+        dist = sqrt( pow(this.x - point.x, 2) + pow(this.y - point.y, 2) );
         return dist;
     }
 
@@ -80,5 +80,14 @@ public class Point2D extends Parent implements Interface
 	*/
 	public void setY(double y) {
 		this.y = y;
+	}
+
+	/**
+	* Create string representation of Point2D for printing
+	* @return
+	*/
+	@Override
+	public String toString() {
+		return "Point2D [x=" + x + ", y=" + y + "]";
 	}
 }
