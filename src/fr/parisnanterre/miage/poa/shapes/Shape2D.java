@@ -20,6 +20,12 @@ public abstract class Shape2D
 		this.refPoint = refPoint;
 	}
 
+    /**
+     * [abstract method]
+     * @return [double]
+     */
+    public abstract double perimeter();
+
 	/**
 	* Returns value of refPoint
 	* @return Point2D
