@@ -27,14 +27,6 @@ public abstract class Shape2D extends Shape implements Translatable2D
     public abstract double perimeter();
 
 	/**
-	* Returns value of refPoint
-	* @return Point2D
-	*/
-	public Point2D getRefPoint() {
-		return refPoint;
-	}
-
-	/**
 	* Sets new value of refPoint
 	* @param Point2D
 	*/
