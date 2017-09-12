@@ -3,7 +3,7 @@ package fr.parisnanterre.miage.poa.shapes;
 import java.lang.Math;
 
 
-public final class Cone extends Shape3D
+public class Cone extends Shape3D
 {
     public double height;
     public double radius;
