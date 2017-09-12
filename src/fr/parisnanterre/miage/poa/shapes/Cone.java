@@ -3,7 +3,7 @@ package fr.parisnanterre.miage.poa.shapes;
 import java.lang.Math;
 
 
-public final class Cone
+public final class Cone extends Shape3D
 {
     public double height;
     public double radius;
@@ -33,7 +33,7 @@ public final class Cone
     @Override
     public double volume()
     {
-        double v = (Math.pi * Math.pow(this.radius, 2) * this.height) / 3;
+        double v = (Math.PI * Math.pow(this.radius, 2) * this.height) / 3;
         return v;
     }
 
@@ -44,7 +44,7 @@ public final class Cone
     @Override
     public double surface()
     {
-        double s = sqrt( pow(this.height,2) + pow(this.radius,2)) * Math.pi * this.radius );
+        double s = Math.sqrt( Math.pow(this.height,2) + Math.pow(this.radius,2) ) * Math.PI * this.radius;
         return s;
     }
 
