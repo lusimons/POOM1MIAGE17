@@ -28,6 +28,7 @@ public class Rectangle extends Shape2D
      * [Calculate the perimeter of the instance]
      * @return [double]
      */
+    @Override
     public double perimeter()
     {
         double perimeter = (this.length + this.width)*2;
