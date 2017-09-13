@@ -9,29 +9,29 @@ public class Cuboid extends Shape3D
     public double height;
     public double width;
 
-	/**
-	* Default empty Cone constructor
-	*/
-	public Cuboid()
+    /**
+    * Default empty Cone constructor
+    */
+    public Cuboid()
     {
         this(0.0, 0.0, 0.0);
-	}
+    }
 
-	/**
-	* Default Cone constructor
-	*/
-	public Cuboid(double length, double height, double width)
+    /**
+    * Default Cone constructor
+    */
+    public Cuboid(double length, double height, double width)
     {
         super();
         this.setLength(length);
         this.setHeight(height);
         this.setWidth(width);
-	}
+    }
 
     /**
-     * [Calculate the volume of the instance]
-     * @return [double]
-     */
+    * [Calculate the volume of the instance]
+    * @return [double]
+    */
     @Override
     public double volume()
     {
@@ -40,9 +40,9 @@ public class Cuboid extends Shape3D
     }
 
     /**
-     * [Calculate the surface of the instance]
-     * @return [double]
-     */
+    * [Calculate the surface of the instance]
+    * @return [double]
+    */
     @Override
     public double surface()
     {
@@ -50,59 +50,59 @@ public class Cuboid extends Shape3D
         return s;
     }
 
-	/**
-	* Returns value of length
-	* @return
-	*/
-	public double getLength() {
+    /**
+    * Returns value of length
+    * @return
+    */
+    public double getLength() {
         return this.length;
-	}
+    }
 
-	/**
-	* Sets new value of length
-	* @param
-	*/
-	public void setLength(double length) {
+    /**
+    * Sets new value of length
+    * @param
+    */
+    public void setLength(double length) {
         this.length = length;
         this.height = length;
         this.width = length;
-	}
+    }
 
-	/**
-	* Returns value of height
-	* @return
-	*/
-	public double getHeight() {
+    /**
+    * Returns value of height
+    * @return
+    */
+    public double getHeight() {
         return this.height;
-	}
+    }
 
-	/**
-	* Sets new value of height
-	* @param
-	*/
-	public void setHeight(double height) {
+    /**
+    * Sets new value of height
+    * @param
+    */
+    public void setHeight(double height) {
         this.height = height;
         this.length = height;
         this.width = height;
-	}
+    }
 
-	/**
-	* Returns value of width
-	* @return
-	*/
-	public double getWidth() {
+    /**
+    * Returns value of width
+    * @return
+    */
+    public double getWidth() {
         return this.width;
-	}
+    }
 
-	/**
-	* Sets new value of width
-	* @param
-	*/
-	public void setWidth(double width) {
+    /**
+    * Sets new value of width
+    * @param
+    */
+    public void setWidth(double width) {
         this.width = width;
         this.length = width;
         this.height = width;
-	}
+    }
 
     /**
     * Create string representation of Cone for printing
@@ -113,5 +113,4 @@ public class Cuboid extends Shape3D
     {
         return "Cone [length=" + this.length + "height=" + this.height + ", width=" + this.width + "]";
     }
-
 }
