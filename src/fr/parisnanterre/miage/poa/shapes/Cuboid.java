@@ -14,7 +14,7 @@ public class Cuboid extends Shape3D
 	*/
 	public Cuboid()
     {
-		this(0.0, 0.0, 0.0);
+        this(0.0, 0.0, 0.0);
 	}
 
 	/**
@@ -22,10 +22,10 @@ public class Cuboid extends Shape3D
 	*/
 	public Cuboid(double length, double height, double width)
     {
-		super();
+        super();
         this.setLength(length);
-		this.setHeight(height);
-		this.setWidth(width);
+        this.setHeight(height);
+        this.setWidth(width);
 	}
 
     /**
@@ -55,7 +55,7 @@ public class Cuboid extends Shape3D
 	* @return
 	*/
 	public double getLength() {
-		return this.length;
+        return this.length;
 	}
 
 	/**
@@ -63,7 +63,7 @@ public class Cuboid extends Shape3D
 	* @param
 	*/
 	public void setLength(double length) {
-		this.length = length;
+        this.length = length;
         this.height = length;
         this.width = length;
 	}
@@ -73,7 +73,7 @@ public class Cuboid extends Shape3D
 	* @return
 	*/
 	public double getHeight() {
-		return this.height;
+        return this.height;
 	}
 
 	/**
@@ -81,7 +81,7 @@ public class Cuboid extends Shape3D
 	* @param
 	*/
 	public void setHeight(double height) {
-		this.height = height;
+        this.height = height;
         this.length = height;
         this.width = height;
 	}
@@ -91,7 +91,7 @@ public class Cuboid extends Shape3D
 	* @return
 	*/
 	public double getWidth() {
-		return this.width;
+        return this.width;
 	}
 
 	/**
@@ -99,7 +99,7 @@ public class Cuboid extends Shape3D
 	* @param
 	*/
 	public void setWidth(double width) {
-		this.width = width;
+        this.width = width;
         this.length = width;
         this.height = width;
 	}
